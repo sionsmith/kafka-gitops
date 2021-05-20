@@ -1,12 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: confluent-private
+  name: confluent-helm
   namespace: flux-system
 spec:
-  url: https://confluent.jfrog.io/confluent/helm-early-access-operator-2
-  secretRef:
-    name: https-credentials
+  url: https://packages.confluent.io/helm
   interval: 1m
 ---
 #apiVersion: v1

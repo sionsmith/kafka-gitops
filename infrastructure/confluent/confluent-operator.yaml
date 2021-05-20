@@ -11,8 +11,5 @@ spec:
       chart: confluent-for-kubernetes
       sourceRef:
         kind: HelmRepository
-        name: confluent-private
+        name: confluent-helm
         namespace: flux-system
-  values:
-    image:
-      registry: confluent-docker-internal-early-access-operator-2.jfrog.io
